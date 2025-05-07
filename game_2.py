@@ -1,6 +1,6 @@
 import numpy as np
 
-start = input("Um Spiel anzufangen, druck mal Enter")
+start = input("Drücke Enter, um das Spiel zu beginnen!")
 
 print("\n")
 
@@ -10,19 +10,19 @@ if start == "":
     game_round = 1
     
     while player1_score != 3 or player2_score != 3:
-        print(f"Round {game_round}, FIGHT!")
+        print(f"Runde: {game_round}" )
         print("\n")
         
         # player inputs
-        player1_start = input("Player 1, press enter")
+        player1_start = input("Spieler 1, Drücke Enter!")
         player1_value = np.random.randint(low=1, high=7)
-        print(f"Plyer 1, your score is: {player1_value}")
+        print(f"Spieler 1, dein Score ist: {player1_value}")
         
         print("\n")
         
-        player2_start = input("Player 2, press enter")
+        player2_start = input("Spieler 2, Drücke Enter!")
         player2_value = np.random.randint(low=1, high=7)
-        print(f"Plyer 2, your score is: {player2_value}")
+        print(f"Spieler 2, dein Score ist: {player2_value}")
         
         print("\n")
         
@@ -31,7 +31,7 @@ if start == "":
         elif player1_value < player2_value:
             player2_score += 1
             
-        print(f"Game score is: \n Player 1: {player1_score} \n Player 2: {player2_score}")
+        print(f"Gesamter Score: \n Spieler 1: {player1_score} \n Spieler 2: {player2_score}")
             
         print("\n")
 

@@ -1,6 +1,6 @@
 # intput output
 print("Hello World")
-value = input("Enter some text please \n")
+value = input("Gebe etwas ein! \n")
 print(value)
 
 # ifs
